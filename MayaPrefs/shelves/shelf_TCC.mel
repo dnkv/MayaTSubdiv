@@ -1,0 +1,607 @@
+global proc shelf_TCC () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "polyCube;\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "polyCube;\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "cube.png" 
+        -image1 "cube.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyCube;\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "selection = om.MGlobal.getActiveSelectionList().getSelectionStrings();\nsel = selection[0]\nif cmds.nodeType(sel)!=\"transform\":\n    print(\"Warning: Not a transform node!\")\nselShape = cmds.listRelatives(sel, shapes=True)[0];\nDAGstr = sel.rpartition(\"|\")[2]\nTCCnode = cmds.createNode(\"TCC\");\nTCCtransform = cmds.createNode(\"transform\", name=\"TCC_\"+DAGstr, parent = sel);\nTCCmesh = cmds.createNode(\"mesh\", name=\"TCC_\"+selShape, parent=TCCtransform);\ncmds.connectAttr(selShape+\".outMesh\", TCCnode+\".inputMesh\");\ncmds.connectAttr(TCCnode+\".outputMesh\", TCCmesh+\".inMesh\");\ncmds.sets(selShape, rm=\"initialShadingGroup\");\ncmds.sets(TCCmesh, add=\"initialShadingGroup\");\ncmds.setAttr(TCCnode+\".nFVc\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".Fc\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".pole\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".eqc\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".itv\", 0, type=\"doubleArray\");\ncmds.setAttr(TCCnode+\".err\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCmesh+\".overrideEnabled\", 1);\ncmds.setAttr(TCCmesh+\".overrideDisplayType\", 2);\ncmds.setAttr(TCCmesh+\".displayEdges\", 2);\ncmds.select(sel);\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "selection = om.MGlobal.getActiveSelectionList().getSelectionStri..." 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "sphere.png" 
+        -image1 "sphere.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.api.OpenMaya as om;\nimport maya.cmds as cmds;\n\nselection = om.MGlobal.getActiveSelectionList().getSelectionStrings();\nsel = selection[0]\nif cmds.nodeType(sel)!=\"transform\":\n    print(\"Warning: Not a transform node!\")\nselShape = cmds.listRelatives(sel, shapes=True)[0];\nDAGstr = sel.rpartition(\"|\")[2]\nTCCnode = cmds.createNode(\"TCC\");\nTCCtransform = cmds.createNode(\"transform\", name=\"TCC_\"+DAGstr);\nTCCmesh = cmds.createNode(\"mesh\", name=\"TCC_\"+selShape, parent=TCCtransform);\ncmds.connectAttr(selShape+\".outMesh\", TCCnode+\".inputMesh\");\ncmds.connectAttr(TCCnode+\".outputMesh\", TCCmesh+\".inMesh\");\ncmds.sets(selShape, rm=\"initialShadingGroup\");\ncmds.sets(TCCmesh, add=\"initialShadingGroup\");\ncmds.setAttr(TCCnode+\".nFVc\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".Fc\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".pole\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".corner\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".T\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".eqc\", 0, type=\"Int32Array\");\ncmds.setAttr(TCCnode+\".itv\", 0, type=\"doubleArray\");\ncmds.setAttr(TCCnode+\".err\", 0, type=\"Int32Array\");\n#cmds.setAttr(TCCmesh+\".overrideEnabled\", 1);\n#cmds.setAttr(TCCmesh+\".overrideDisplayType\", 2);\n#cmds.setAttr(TCCmesh+\".displayEdges\", 2);\ncmds.select(sel);\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 23
+        -height 23
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "updateTCCData\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "updateTCCData\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "refresh.png" 
+        -image1 "refresh.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "updateTCCData\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "InteractiveSplitTool\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "InteractiveSplitTool\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "polySplitFacet.png" 
+        -image1 "polySplitFacet.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "InteractiveSplitTool\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Select Valence 2 Vertices" 
+        -enableBackground 0
+        -align "center" 
+        -label "Select Valence 2 Vertices" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "polyConvertToEdgeLoop.png" 
+        -image1 "polyConvertToEdgeLoop.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "selectValence2Vertices;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 23
+        -height 23
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "polyOptions -cs 1\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "polyOptions -cs 1\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "colorPresetSpectrum.png" 
+        -image1 "colorPresetSpectrum.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyOptions -cs 1\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 23
+        -height 23
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "polyOptions -cs 0\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "polyOptions -cs 0\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "colorPresetGrayscale.png" 
+        -image1 "colorPresetGrayscale.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyOptions -cs 0\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Temp" 
+        -enableBackground 0
+        -align "center" 
+        -label "Split Bevel" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "cly_edgeSplitBevel.bmp" 
+        -image1 "cly_edgeSplitBevel.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "cly_edgeSplitBevel" 
+        -sourceType "mel" 
+        -doubleClickCommand "cly_edgeSplitBevelOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Knot Insertion" 
+        -enableBackground 0
+        -align "center" 
+        -label "Knot Insertion" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0 
+        -image "KnotInsertion.png" 
+        -image1 "KnotInsertion.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "tccKnotModifier insert;\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Knot Removal" 
+        -enableBackground 0
+        -align "center" 
+        -label "Knot Removal" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0 
+        -image "KnotRemoval.png" 
+        -image1 "KnotRemoval.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "tccKnotModifier remove;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Knot Itv Double" 
+        -enableBackground 0
+        -align "center" 
+        -label "Knot Itv Double" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "KnotItvDouble.png" 
+        -image1 "KnotItvDouble.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "tccKnotIntervals double;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Knot Itv Half" 
+        -enableBackground 0
+        -align "center" 
+        -label "Knot Itv Half" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "KnotItvHalf.png" 
+        -image1 "KnotItvHalf.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "tccKnotIntervals half;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "User Script" 
+        -enableBackground 0
+        -align "center" 
+        -label "Corner Toggle" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "toggleCorner32.png" 
+        -image1 "toggleCorner32.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "tccToggleCorner()" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "tccOBJexport\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "tccOBJexport\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "exportCache.png" 
+        -image1 "exportCache.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "tccOBJexport\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 23
+        -height 23
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.OpenMaya as om;\nimport maya.cmds as cmds;\nimport maya.mel as mel;\n\nimport mayaTools as mt;\n\ndagPath = mt.selected_dagPath();\ndagPath.extendToShape();\n\nif not cmds.objExists(\"UVKnotGridSG\"):\n  cmds.file(\"UVtexture.mb\", i=True);\n\ncmds.sets(dagPath.fullPathName(), e=True, forceElement=\"UVKnotGridSG\");\ncmds.uvLink( make=True, uvSet=dagPath.fullPathName()+'.uvSet[1].uvSetName', texture='patches');\ncmds.uvLink( make=True, uvSet=dagPath.fullPathName()+'.uvSet[2].uvSetName', texture='knots');\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "import maya.OpenMaya as om;\nimport maya.cmds as cmds;\nimport may..." 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "gridDisplay.png" 
+        -image1 "gridDisplay.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.OpenMaya as om;\nimport maya.cmds as cmds;\nimport maya.mel as mel;\n\nimport mayaTools as mt;\n\ndagPath = mt.selected_dagPath();\ndagPath.extendToShape();\n\nif not cmds.objExists(\"UVKnotGridSG\"):\n  cmds.file(\"UVtexture.mb\", i=True);\n\ncmds.sets(dagPath.fullPathName(), e=True, forceElement=\"UVKnotGridSG\");\ncmds.uvLink( make=True, uvSet=dagPath.fullPathName()+'.uvSet[1].uvSetName', texture='patches');\ncmds.uvLink( make=True, uvSet=dagPath.fullPathName()+'.uvSet[2].uvSetName', texture='knots');\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "shadingNode -asShader blinn;\nconnectAttr -force blinn1.outColor initialShadingGroup.surfaceShader;\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "shadingNode -asShader blinn;\nconnectAttr -force blinn1.outColor ..." 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "render_blinn.png" 
+        -image1 "render_blinn.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "shadingNode -asShader blinn;\nconnectAttr -force blinn1.outColor initialShadingGroup.surfaceShader;\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "selectTHeuristic" 
+        -enableBackground 0
+        -align "center" 
+        -label "selectTHeuristic" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "selectCVboundary.png" 
+        -image1 "selectCVboundary.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "selectTHeuristic" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "assignUnitUVsCmd" 
+        -enableBackground 0
+        -align "center" 
+        -label "assignUnitUVsCmd" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "polyConvertToUVShell.png" 
+        -image1 "polyConvertToUVShell.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "assignUnitUVsCmd" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "selectPoles\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "selectPoles\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "pointlight.png" 
+        -image1 "pointlight.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "selectPoles\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "selectTjoints\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "selectTjoints\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "text.png" 
+        -image1 "text.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "selectTjoints\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "ballSelectedVertsCmd\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "ballSelectedVertsCmd\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "polySphere.png" 
+        -image1 "polySphere.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ballSelectedVerts\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "hilite = mel.eval(\"ls -hl\");\nvlist = mt.selected_vertices()\ncmds.select(cl=True);\nfor v in vlist:\n    cmds.select(hilite[1]+\".vtx[\"+str(v)+\"]\", tgl=True);\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "hilite = mel.eval(\"ls -hl\");\nvlist = mt.selected_vertices()\ncmds..." 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "selectLastCV.png" 
+        -image1 "selectLastCV.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.mel as mel\nhilite = mel.eval(\"ls -hl\");\nvlist = mt.selected_vertices()\ncmds.select(cl=True);\nfor v in vlist:\n    cmds.select(hilite[1]+\".vtx[\"+str(v)+\"]\", tgl=True);\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 23
+        -height 23
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "mattePassMaker" 
+        -enableBackground 0
+        -align "center" 
+        -label "mattePassMaker" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "layerEditor.png" 
+        -image1 "layerEditor.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "mattePassMaker" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 

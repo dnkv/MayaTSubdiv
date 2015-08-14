@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000002 /* updateTCCDataCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* updateTCCDataCmd.cpp */; };
+		100000000000000000000018 /* updateTCCDataCmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 100000000000000000000017 /* updateTCCDataCmd.h */; };
+		B766CB9F160A18B7006F3F80 /* updateTCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B766CB9B160A18B7006F3F80 /* updateTCC.cpp */; };
+		B766CBA0160A18B7006F3F80 /* updateTCC.h in Headers */ = {isa = PBXBuildFile; fileRef = B766CB9C160A18B7006F3F80 /* updateTCC.h */; };
+		B766CBA1160A18B7006F3F80 /* hds.h in Headers */ = {isa = PBXBuildFile; fileRef = B766CB9D160A18B7006F3F80 /* hds.h */; };
+		B766CBA2160A18B7006F3F80 /* hds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B766CB9E160A18B7006F3F80 /* hds.cpp */; };
+		B76CAC6A15C6D43F0077F5E3 /* blinddata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B76CAC6815C6D43E0077F5E3 /* blinddata.cpp */; };
+		B76CAC6B15C6D43F0077F5E3 /* blinddata.h in Headers */ = {isa = PBXBuildFile; fileRef = B76CAC6915C6D43E0077F5E3 /* blinddata.h */; };
+		B7C93EBA15CD88AE009BE328 /* TCCNodeData.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C93EB915CD88AE009BE328 /* TCCNodeData.h */; };
+		B7F4FE6615C83A38003D71B6 /* kvc.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE6015C83A38003D71B6 /* kvc.h */; };
+		B7F4FE6715C83A38003D71B6 /* kvcMatlabVar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FE6115C83A38003D71B6 /* kvcMatlabVar.cpp */; };
+		B7F4FE6815C83A38003D71B6 /* kvcMatlabVar.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE6215C83A38003D71B6 /* kvcMatlabVar.h */; };
+		B7F4FE6915C83A38003D71B6 /* msockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FE6315C83A38003D71B6 /* msockets.cpp */; };
+		B7F4FE6A15C83A38003D71B6 /* msockets.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE6415C83A38003D71B6 /* msockets.h */; };
+		B7F4FE6B15C83A38003D71B6 /* varray.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE6515C83A38003D71B6 /* varray.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* updateTCCDataCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = updateTCCDataCmd.cpp; sourceTree = "<group>"; };
+		100000000000000000000003 /* updateTCCDataFty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = updateTCCDataFty.cpp; sourceTree = "<group>"; };
+		100000000000000000000005 /* updateTCCDataFtyAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = updateTCCDataFtyAction.cpp; sourceTree = "<group>"; };
+		100000000000000000000007 /* updateTCCDataMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = updateTCCDataMain.cpp; sourceTree = "<group>"; };
+		100000000000000000000009 /* updateTCCDataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = updateTCCDataNode.cpp; sourceTree = "<group>"; };
+		100000000000000000000017 /* updateTCCDataCmd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = updateTCCDataCmd.h; sourceTree = "<group>"; };
+		100000000000000000000019 /* updateTCCDataFty.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = updateTCCDataFty.h; sourceTree = "<group>"; };
+		10000000000000000000001B /* updateTCCDataNode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = updateTCCDataNode.h; sourceTree = "<group>"; };
+		B766CB9B160A18B7006F3F80 /* updateTCC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = updateTCC.cpp; path = reused/updateTCC.cpp; sourceTree = "<group>"; };
+		B766CB9C160A18B7006F3F80 /* updateTCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = updateTCC.h; path = reused/updateTCC.h; sourceTree = "<group>"; };
+		B766CB9D160A18B7006F3F80 /* hds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hds.h; path = reused/hds.h; sourceTree = "<group>"; };
+		B766CB9E160A18B7006F3F80 /* hds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hds.cpp; path = reused/hds.cpp; sourceTree = "<group>"; };
+		B76CAC6815C6D43E0077F5E3 /* blinddata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blinddata.cpp; sourceTree = "<group>"; };
+		B76CAC6915C6D43E0077F5E3 /* blinddata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blinddata.h; sourceTree = "<group>"; };
+		B7C93EB915CD88AE009BE328 /* TCCNodeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCNodeData.h; sourceTree = "<group>"; };
+		B7F4FE6015C83A38003D71B6 /* kvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kvc.h; path = reused/kvc.h; sourceTree = "<group>"; };
+		B7F4FE6115C83A38003D71B6 /* kvcMatlabVar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kvcMatlabVar.cpp; path = reused/kvcMatlabVar.cpp; sourceTree = "<group>"; };
+		B7F4FE6215C83A38003D71B6 /* kvcMatlabVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kvcMatlabVar.h; path = reused/kvcMatlabVar.h; sourceTree = "<group>"; };
+		B7F4FE6315C83A38003D71B6 /* msockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = msockets.cpp; path = reused/msockets.cpp; sourceTree = "<group>"; };
+		B7F4FE6415C83A38003D71B6 /* msockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msockets.h; path = reused/msockets.h; sourceTree = "<group>"; };
+		B7F4FE6515C83A38003D71B6 /* varray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = varray.h; path = reused/varray.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* updateTCCDataCmd.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = updateTCCDataCmd.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* updateTCCDataCmdPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				8A7F063208688F460064D097 /* Mel */,
+				8A7F063308688F580064D097 /* Resources */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = updateTCCDataCmdPlugin;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FE5E15C83A29003D71B6 /* Reused */,
+				100000000000000000000017 /* updateTCCDataCmd.h */,
+				100000000000000000000001 /* updateTCCDataCmd.cpp */,
+				100000000000000000000019 /* updateTCCDataFty.h */,
+				100000000000000000000003 /* updateTCCDataFty.cpp */,
+				100000000000000000000005 /* updateTCCDataFtyAction.cpp */,
+				10000000000000000000001B /* updateTCCDataNode.h */,
+				100000000000000000000009 /* updateTCCDataNode.cpp */,
+				100000000000000000000007 /* updateTCCDataMain.cpp */,
+				B76CAC6815C6D43E0077F5E3 /* blinddata.cpp */,
+				B76CAC6915C6D43E0077F5E3 /* blinddata.h */,
+				B7C93EB915CD88AE009BE328 /* TCCNodeData.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* updateTCCDataCmd.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7F063208688F460064D097 /* Mel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mel;
+			sourceTree = "<group>";
+		};
+		8A7F063308688F580064D097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B7F4FE5E15C83A29003D71B6 /* Reused */ = {
+			isa = PBXGroup;
+			children = (
+				B766CB9B160A18B7006F3F80 /* updateTCC.cpp */,
+				B766CB9C160A18B7006F3F80 /* updateTCC.h */,
+				B766CB9D160A18B7006F3F80 /* hds.h */,
+				B766CB9E160A18B7006F3F80 /* hds.cpp */,
+				B7F4FE6015C83A38003D71B6 /* kvc.h */,
+				B7F4FE6115C83A38003D71B6 /* kvcMatlabVar.cpp */,
+				B7F4FE6215C83A38003D71B6 /* kvcMatlabVar.h */,
+				B7F4FE6315C83A38003D71B6 /* msockets.cpp */,
+				B7F4FE6415C83A38003D71B6 /* msockets.h */,
+				B7F4FE6515C83A38003D71B6 /* varray.h */,
+			);
+			name = Reused;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000018 /* updateTCCDataCmd.h in Headers */,
+				B76CAC6B15C6D43F0077F5E3 /* blinddata.h in Headers */,
+				B7F4FE6615C83A38003D71B6 /* kvc.h in Headers */,
+				B7F4FE6815C83A38003D71B6 /* kvcMatlabVar.h in Headers */,
+				B7F4FE6A15C83A38003D71B6 /* msockets.h in Headers */,
+				B7F4FE6B15C83A38003D71B6 /* varray.h in Headers */,
+				B7C93EBA15CD88AE009BE328 /* TCCNodeData.h in Headers */,
+				B766CBA0160A18B7006F3F80 /* updateTCC.h in Headers */,
+				B766CBA1160A18B7006F3F80 /* hds.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* updateTCCDataCmd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "updateTCCDataCmd" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = updateTCCDataCmd;
+			productName = updateTCCDataCmdPlugin;
+			productReference = D2AAC0630554660B00DB518D /* updateTCCDataCmd.bundle */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "updateTCCDataCmd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* updateTCCDataCmdPlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* updateTCCDataCmd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000002 /* updateTCCDataCmd.cpp in Sources */,
+				B76CAC6A15C6D43F0077F5E3 /* blinddata.cpp in Sources */,
+				B7F4FE6715C83A38003D71B6 /* kvcMatlabVar.cpp in Sources */,
+				B7F4FE6915C83A38003D71B6 /* msockets.cpp in Sources */,
+				B766CB9F160A18B7006F3F80 /* updateTCC.cpp in Sources */,
+				B766CBA2160A18B7006F3F80 /* hds.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A7F05EE086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				PRODUCT_NAME = updateTCCDataCmd;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		8A7F05EF086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				PRODUCT_NAME = updateTCCDataCmd;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8A7F05F2086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = BUNDLE;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2014;
+				OTHER_LDFLAGS = (
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
+					"-Wl,-exported_symbol,__Z18uninitializePlugin7MObject",
+					"-lOpenMaya",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+			};
+			name = Debug;
+		};
+		8A7F05F3086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = BUNDLE;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2014;
+				OTHER_LDFLAGS = (
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
+					"-Wl,-exported_symbol,__Z18uninitializePlugin7MObject",
+					"-lOpenMaya",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "updateTCCDataCmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05EE086863A70064D097 /* Debug */,
+				8A7F05EF086863A70064D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "updateTCCDataCmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05F2086863A70064D097 /* Debug */,
+				8A7F05F3086863A70064D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

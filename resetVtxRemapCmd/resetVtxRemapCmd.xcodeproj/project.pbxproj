@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000002 /* resetVtxRemapCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* resetVtxRemapCmd.cpp */; };
+		100000000000000000000004 /* resetVtxRemapFty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* resetVtxRemapFty.cpp */; };
+		100000000000000000000006 /* resetVtxRemapFtyAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* resetVtxRemapFtyAction.cpp */; };
+		100000000000000000000008 /* resetVtxRemapMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* resetVtxRemapMain.cpp */; };
+		10000000000000000000000A /* resetVtxRemapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000009 /* resetVtxRemapNode.cpp */; };
+		10000000000000000000000C /* polyModifierCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000B /* polyModifierCmd.cpp */; };
+		10000000000000000000000E /* polyModifierFty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000D /* polyModifierFty.cpp */; };
+		100000000000000000000010 /* polyModifierNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000F /* polyModifierNode.cpp */; };
+		100000000000000000000012 /* polyModifierCmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 100000000000000000000011 /* polyModifierCmd.h */; };
+		100000000000000000000014 /* polyModifierFty.h in Headers */ = {isa = PBXBuildFile; fileRef = 100000000000000000000013 /* polyModifierFty.h */; };
+		100000000000000000000016 /* polyModifierNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 100000000000000000000015 /* polyModifierNode.h */; };
+		100000000000000000000018 /* resetVtxRemapCmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 100000000000000000000017 /* resetVtxRemapCmd.h */; };
+		10000000000000000000001A /* resetVtxRemapFty.h in Headers */ = {isa = PBXBuildFile; fileRef = 100000000000000000000019 /* resetVtxRemapFty.h */; };
+		10000000000000000000001C /* resetVtxRemapNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001B /* resetVtxRemapNode.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* resetVtxRemapCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resetVtxRemapCmd.cpp; sourceTree = "<group>"; };
+		100000000000000000000003 /* resetVtxRemapFty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resetVtxRemapFty.cpp; sourceTree = "<group>"; };
+		100000000000000000000005 /* resetVtxRemapFtyAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resetVtxRemapFtyAction.cpp; sourceTree = "<group>"; };
+		100000000000000000000007 /* resetVtxRemapMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resetVtxRemapMain.cpp; sourceTree = "<group>"; };
+		100000000000000000000009 /* resetVtxRemapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resetVtxRemapNode.cpp; sourceTree = "<group>"; };
+		10000000000000000000000B /* polyModifierCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polyModifierCmd.cpp; sourceTree = "<group>"; };
+		10000000000000000000000D /* polyModifierFty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polyModifierFty.cpp; sourceTree = "<group>"; };
+		10000000000000000000000F /* polyModifierNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polyModifierNode.cpp; sourceTree = "<group>"; };
+		100000000000000000000011 /* polyModifierCmd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = polyModifierCmd.h; sourceTree = "<group>"; };
+		100000000000000000000013 /* polyModifierFty.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = polyModifierFty.h; sourceTree = "<group>"; };
+		100000000000000000000015 /* polyModifierNode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = polyModifierNode.h; sourceTree = "<group>"; };
+		100000000000000000000017 /* resetVtxRemapCmd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = resetVtxRemapCmd.h; sourceTree = "<group>"; };
+		100000000000000000000019 /* resetVtxRemapFty.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = resetVtxRemapFty.h; sourceTree = "<group>"; };
+		10000000000000000000001B /* resetVtxRemapNode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = resetVtxRemapNode.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* resetVtxRemapCmd.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = resetVtxRemapCmd.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* resetVtxRemapCmdPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				8A7F063208688F460064D097 /* Mel */,
+				8A7F063308688F580064D097 /* Resources */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = resetVtxRemapCmdPlugin;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B76CAC6015C468460077F5E3 /* polyModifier */,
+				100000000000000000000017 /* resetVtxRemapCmd.h */,
+				100000000000000000000001 /* resetVtxRemapCmd.cpp */,
+				100000000000000000000019 /* resetVtxRemapFty.h */,
+				100000000000000000000003 /* resetVtxRemapFty.cpp */,
+				100000000000000000000005 /* resetVtxRemapFtyAction.cpp */,
+				10000000000000000000001B /* resetVtxRemapNode.h */,
+				100000000000000000000009 /* resetVtxRemapNode.cpp */,
+				100000000000000000000007 /* resetVtxRemapMain.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* resetVtxRemapCmd.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7F063208688F460064D097 /* Mel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mel;
+			sourceTree = "<group>";
+		};
+		8A7F063308688F580064D097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B76CAC6015C468460077F5E3 /* polyModifier */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000B /* polyModifierCmd.cpp */,
+				10000000000000000000000D /* polyModifierFty.cpp */,
+				10000000000000000000000F /* polyModifierNode.cpp */,
+				100000000000000000000011 /* polyModifierCmd.h */,
+				100000000000000000000013 /* polyModifierFty.h */,
+				100000000000000000000015 /* polyModifierNode.h */,
+			);
+			name = polyModifier;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000012 /* polyModifierCmd.h in Headers */,
+				100000000000000000000014 /* polyModifierFty.h in Headers */,
+				100000000000000000000016 /* polyModifierNode.h in Headers */,
+				100000000000000000000018 /* resetVtxRemapCmd.h in Headers */,
+				10000000000000000000001A /* resetVtxRemapFty.h in Headers */,
+				10000000000000000000001C /* resetVtxRemapNode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* resetVtxRemapCmd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "resetVtxRemapCmd" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = resetVtxRemapCmd;
+			productName = resetVtxRemapCmdPlugin;
+			productReference = D2AAC0630554660B00DB518D /* resetVtxRemapCmd.bundle */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "resetVtxRemapCmd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* resetVtxRemapCmdPlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* resetVtxRemapCmd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000002 /* resetVtxRemapCmd.cpp in Sources */,
+				100000000000000000000004 /* resetVtxRemapFty.cpp in Sources */,
+				100000000000000000000006 /* resetVtxRemapFtyAction.cpp in Sources */,
+				100000000000000000000008 /* resetVtxRemapMain.cpp in Sources */,
+				10000000000000000000000A /* resetVtxRemapNode.cpp in Sources */,
+				10000000000000000000000C /* polyModifierCmd.cpp in Sources */,
+				10000000000000000000000E /* polyModifierFty.cpp in Sources */,
+				100000000000000000000010 /* polyModifierNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A7F05EE086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2014;
+				PRODUCT_NAME = resetVtxRemapCmd;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		8A7F05EF086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2014;
+				PRODUCT_NAME = resetVtxRemapCmd;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8A7F05F2086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = BUNDLE;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2013;
+				OTHER_LDFLAGS = (
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
+					"-Wl,-exported_symbol,__Z18uninitializePlugin7MObject",
+					"-lOpenMaya",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+			};
+			name = Debug;
+		};
+		8A7F05F3086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = BUNDLE;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2013;
+				OTHER_LDFLAGS = (
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
+					"-Wl,-exported_symbol,__Z18uninitializePlugin7MObject",
+					"-lOpenMaya",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "resetVtxRemapCmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05EE086863A70064D097 /* Debug */,
+				8A7F05EF086863A70064D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "resetVtxRemapCmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05F2086863A70064D097 /* Debug */,
+				8A7F05F3086863A70064D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

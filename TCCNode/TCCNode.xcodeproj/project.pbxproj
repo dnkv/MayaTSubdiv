@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000002 /* TCCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* TCCNode.cpp */; };
+		B7097F8316122E7800105672 /* hds_hash.h in Headers */ = {isa = PBXBuildFile; fileRef = B7097F8216122E7800105672 /* hds_hash.h */; };
+		B7C638101645F8980006BEF9 /* tcc_max.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C6380E1645F8980006BEF9 /* tcc_max.cpp */; };
+		B7C638111645F8980006BEF9 /* tcc_max.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C6380F1645F8980006BEF9 /* tcc_max.h */; };
+		B7C63818164606450006BEF9 /* kvcMatlabVar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FE8B15CA1A50003D71B6 /* kvcMatlabVar.cpp */; };
+		B7F4FE9215CA1A50003D71B6 /* blinddata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FE8815CA1A50003D71B6 /* blinddata.cpp */; };
+		B7F4FE9315CA1A50003D71B6 /* blinddata.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE8915CA1A50003D71B6 /* blinddata.h */; };
+		B7F4FE9415CA1A50003D71B6 /* kvc.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE8A15CA1A50003D71B6 /* kvc.h */; };
+		B7F4FE9715CA1A50003D71B6 /* msockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FE8D15CA1A50003D71B6 /* msockets.cpp */; };
+		B7F4FE9815CA1A50003D71B6 /* msockets.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE8E15CA1A50003D71B6 /* msockets.h */; };
+		B7F4FE9B15CA1A50003D71B6 /* varray.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE9115CA1A50003D71B6 /* varray.h */; };
+		B7F4FE9E15CA1A7C003D71B6 /* hds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FE9C15CA1A7C003D71B6 /* hds.cpp */; };
+		B7F4FE9F15CA1A7C003D71B6 /* hds.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F4FE9D15CA1A7C003D71B6 /* hds.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* TCCNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCCNode.cpp; sourceTree = "<group>"; };
+		100000000000000000000003 /* TCCNode.mel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TCCNode.mel; sourceTree = "<group>"; };
+		B7097F8216122E7800105672 /* hds_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hds_hash.h; path = reused/hds_hash.h; sourceTree = "<group>"; };
+		B7C6380E1645F8980006BEF9 /* tcc_max.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tcc_max.cpp; path = reused/tcc_max.cpp; sourceTree = "<group>"; };
+		B7C6380F1645F8980006BEF9 /* tcc_max.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tcc_max.h; path = reused/tcc_max.h; sourceTree = "<group>"; };
+		B7F4FE8815CA1A50003D71B6 /* blinddata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blinddata.cpp; path = reused/blinddata.cpp; sourceTree = "<group>"; };
+		B7F4FE8915CA1A50003D71B6 /* blinddata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinddata.h; path = reused/blinddata.h; sourceTree = "<group>"; };
+		B7F4FE8A15CA1A50003D71B6 /* kvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kvc.h; path = reused/kvc.h; sourceTree = "<group>"; };
+		B7F4FE8B15CA1A50003D71B6 /* kvcMatlabVar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kvcMatlabVar.cpp; path = reused/kvcMatlabVar.cpp; sourceTree = "<group>"; };
+		B7F4FE8C15CA1A50003D71B6 /* kvcMatlabVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kvcMatlabVar.h; path = reused/kvcMatlabVar.h; sourceTree = "<group>"; };
+		B7F4FE8D15CA1A50003D71B6 /* msockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = msockets.cpp; path = reused/msockets.cpp; sourceTree = "<group>"; };
+		B7F4FE8E15CA1A50003D71B6 /* msockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msockets.h; path = reused/msockets.h; sourceTree = "<group>"; };
+		B7F4FE9115CA1A50003D71B6 /* varray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = varray.h; path = reused/varray.h; sourceTree = "<group>"; };
+		B7F4FE9C15CA1A7C003D71B6 /* hds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hds.cpp; path = reused/hds.cpp; sourceTree = "<group>"; };
+		B7F4FE9D15CA1A7C003D71B6 /* hds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hds.h; path = reused/hds.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* TCCNode.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = TCCNode.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* TCCNodePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				8A7F063208688F460064D097 /* Mel */,
+				8A7F063308688F580064D097 /* Resources */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = TCCNodePlugin;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4FE8715CA0E43003D71B6 /* Reused */,
+				100000000000000000000001 /* TCCNode.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* TCCNode.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7F063208688F460064D097 /* Mel */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000003 /* TCCNode.mel */,
+			);
+			name = Mel;
+			sourceTree = "<group>";
+		};
+		8A7F063308688F580064D097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B7F4FE8715CA0E43003D71B6 /* Reused */ = {
+			isa = PBXGroup;
+			children = (
+				B7C6380E1645F8980006BEF9 /* tcc_max.cpp */,
+				B7C6380F1645F8980006BEF9 /* tcc_max.h */,
+				B7F4FE9C15CA1A7C003D71B6 /* hds.cpp */,
+				B7097F8216122E7800105672 /* hds_hash.h */,
+				B7F4FE9D15CA1A7C003D71B6 /* hds.h */,
+				B7F4FE8815CA1A50003D71B6 /* blinddata.cpp */,
+				B7F4FE8915CA1A50003D71B6 /* blinddata.h */,
+				B7F4FE8A15CA1A50003D71B6 /* kvc.h */,
+				B7F4FE8B15CA1A50003D71B6 /* kvcMatlabVar.cpp */,
+				B7F4FE8C15CA1A50003D71B6 /* kvcMatlabVar.h */,
+				B7F4FE8D15CA1A50003D71B6 /* msockets.cpp */,
+				B7F4FE8E15CA1A50003D71B6 /* msockets.h */,
+				B7F4FE9115CA1A50003D71B6 /* varray.h */,
+			);
+			name = Reused;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4FE9315CA1A50003D71B6 /* blinddata.h in Headers */,
+				B7F4FE9415CA1A50003D71B6 /* kvc.h in Headers */,
+				B7F4FE9815CA1A50003D71B6 /* msockets.h in Headers */,
+				B7F4FE9B15CA1A50003D71B6 /* varray.h in Headers */,
+				B7F4FE9F15CA1A7C003D71B6 /* hds.h in Headers */,
+				B7097F8316122E7800105672 /* hds_hash.h in Headers */,
+				B7C638111645F8980006BEF9 /* tcc_max.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* TCCNode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "TCCNode" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCCNode;
+			productName = TCCNodePlugin;
+			productReference = D2AAC0630554660B00DB518D /* TCCNode.bundle */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "TCCNode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* TCCNodePlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* TCCNode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000002 /* TCCNode.cpp in Sources */,
+				B7F4FE9215CA1A50003D71B6 /* blinddata.cpp in Sources */,
+				B7F4FE9715CA1A50003D71B6 /* msockets.cpp in Sources */,
+				B7F4FE9E15CA1A7C003D71B6 /* hds.cpp in Sources */,
+				B7C638101645F8980006BEF9 /* tcc_max.cpp in Sources */,
+				B7C63818164606450006BEF9 /* kvcMatlabVar.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A7F05EE086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				PRODUCT_NAME = TCCNode;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		8A7F05EF086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				PRODUCT_NAME = TCCNode;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8A7F05F2086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = BUNDLE;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2014;
+				OTHER_LDFLAGS = (
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
+					"-Wl,-exported_symbol,__Z18uninitializePlugin7MObject",
+					"-lOpenMaya",
+					"-lFoundation",
+				);
+			};
+			name = Debug;
+		};
+		8A7F05F3086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = (
+					.,
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = BUNDLE;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2014;
+				OTHER_LDFLAGS = (
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
+					"-Wl,-exported_symbol,__Z18uninitializePlugin7MObject",
+					"-lOpenMaya",
+					"-lFoundation",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "TCCNode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05EE086863A70064D097 /* Debug */,
+				8A7F05EF086863A70064D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "TCCNode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05F2086863A70064D097 /* Debug */,
+				8A7F05F3086863A70064D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
